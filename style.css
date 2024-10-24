@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Abril Fatface", times, serif;
+}
+
+.flex {
+  display: flex;
+}
+.white-color {
+  color: white;
+}
+.black-color {
+  color: black;
+}
+.gray-color {
+  color: gray;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.align-center {
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  flex-wrap: wrap;
+}
+.gray-bg {
+  background-color: rgba(236, 236, 236, 0.276);
+}
+.green-bg {
+  background-color: #65c0ba;
+}
+.black-bg {
+  background-color: black;
+}
+header {
+  background-image: url("https://preview.colorlib.com/theme/hepta/images/hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+  position: relative;
+  z-index: 0;
+  padding-bottom: 10rem;
+}
+header:before {
+  background: rgba(0, 0, 0, 0.2);
+  content: "";
+  position: absolute;
+  /* height: 100vh; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+nav {
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+}
+.content {
+  z-index: 2;
+}
+nav h1 {
+  font-size: 2rem;
+}
+.icon::after {
+  content: "\2630";
+  font-size: 2.5rem;
+}
+header div h1 {
+  font-size: clamp(3rem, 10vw, 6rem);
+
+  margin-bottom: 0;
+}
+header div p {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+header div button {
+  background-color: #00000000;
+  color: white;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  z-index: 2;
+}
+header div button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.sec-section {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-block: 5rem;
+}
+.sec-section div {
+  width: 40%;
+}
+.sec-section div img {
+  width: 100%;
+  height: 70%;
+}
+
+.section-3 div {
+  width: 80%;
+
+  flex-wrap: wrap;
+  text-align: center;
+}
+.section-3 div h1 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.features div {
+  font-size: clamp(0.9rem, 4vw, 1.2rem);
+
+  width: 30%;
+  text-align: center;
+  padding: 1rem;
+}
+.features div img {
+  width: inherit;
+}
+.section-4 {
+  width: 80%;
+}
+.section-4 div {
+  margin: 1rem;
+}
+.section-4 div div {
+  width: clamp(18rem, 19vw, 31rem);
+  background-color: white;
+}
+.section-4 div div h1,
+p {
+  padding-inline: 1rem;
+  padding-block: 0.2rem;
+}
+.section-4 div div img {
+  width: inherit;
+}
+.section-5 div {
+  width: 90%;
+}
+.section-5 h1 {
+  font-size: clamp(2rem, 5vw, 7rem);
+}
+.section-5 div div {
+  width: clamp(22rem, 20vw, 32rem);
+}
+.section-5 div div img {
+  border-radius: 50%;
+  width: clamp(4rem, 4vw, 5rem);
+}
+.section-6 div {
+  width: 90%;
+}
+.section-6 div p {
+  width: 50%;
+  text-align: center;
+}
+.section-6 div div div {
+  width: clamp(15rem, 17vw, 27rem);
+  margin: 1rem;
+}
+.section-6 div div div img {
+  width: inherit;
+}
+footer div {
+  padding-block: 1rem;
+  color: white;
+  hr {
+    border: 0.5px solid gray;
+    width: 70%;
+  }
+  p,
+  .hover p {
+    color: gray;
+  }
+  .hover p:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+}
+footer div div {
+  align-items: flex-start;
+  justify-content: center;
+}
+footer div div div {
+  width: clamp(15rem, 17vw, 27rem);
+
+  input {
+    background: none;
+  }
+}
